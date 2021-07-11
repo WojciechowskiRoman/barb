@@ -1,0 +1,116 @@
+.about {
+
+    padding: 118px 0;
+    background-image: url('../images/about/pattern.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    
+    &__top {
+        margin-bottom: 21px;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 14px;
+    }
+
+    &__subtitle {
+        margin: 0 auto;
+        max-width: 616px;
+        line-height: 1.3;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__img-box {
+        position: relative;
+        width: 470px;
+        height: 593px;
+        z-index: 1;
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 208px;
+            height: 209px;
+            z-index: -2;
+        }
+
+        &::before {
+            background-image: url('../images/about/dots-up.png');
+            top: 50px;
+            left: -39px;
+        }
+
+        &::after {
+            background-image: url('../images/about/dots-up.png');
+            bottom: -71px;
+            right: -41px;
+        }
+    }
+
+    &__box-bg {
+        position: absolute;
+        bottom: 0;
+        height: 500px;
+        width: 100%;
+        background-color: #222;
+        box-shadow: 0 8px 21px 0 rgba(0, 0, 0, 0.2);   
+        z-index: -1;
+    }
+
+    &__img {
+        margin: 0 auto;
+        width: 93%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__content {
+        max-width: 571px;
+    }
+
+    &__welcome {
+        margin-bottom: 17px;
+        font-size: 30px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    &__text {
+        margin-bottom: 50px;
+        display: block;
+        letter-spacing: -0.5px;
+        font-size: 18px;
+        line-height: 1.4;
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__author {
+        margin-bottom: 15px;
+        font-size: 32px;
+        font-weight: 700;
+        color: #fff;
+        font-family: "maddison", sans-serif;
+    }
+
+    &__position {
+        margin-bottom: 50px;
+        display: block;
+    }
+
+    &__link {
+        padding: 15px 0;
+        width: 180px;
+    }
+}

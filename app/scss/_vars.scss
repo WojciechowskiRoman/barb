@@ -1,0 +1,11 @@
+$accent: #F04140;
+$main: #797979;
+
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+  }
+  
+  @function min($numbers...) {
+    @return m#{a}x(#{$numbers});
+  }
